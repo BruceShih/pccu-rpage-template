@@ -1,0 +1,55 @@
+<div class="head">
+  <div class="mlogo">
+    <h1>
+      <a href="/?Lang=zh-tw" title="中國文化大學">
+        <img src="/var/file/331/1331/img/2/mlogo.png" alt="中國文化大學" />
+      </a>
+      <span class="CTitle">電機工程學系</span>
+      <span class="Etitle">Department of Electrical Engineering</span>
+    </h1>
+  </div>
+  <div class="hdsearch">
+    <a
+      aria-expanded="false"
+      class="btn btn-primary navbar-toggle1 sch-toggle"
+      data-toggle="collapse"
+      href="#headsearch"
+      role="button"
+    >
+      <span>Search</span>
+    </a>
+    <div class="collapse" id="headsearch"></div>
+  </div>
+
+  <div class="mycollapse">
+    <button
+      class="navbar-toggle"
+      data-target=".nav-toggle"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span class="glyphicons show_lines">Menu</span>
+    </button>
+    <div class="navbar-collapse collapse nav-toggle" id="collapseExample2">
+      <div class="topnav">%CustMenu_topnav%</div>
+      <div class="mainmenu">%CustMenu_mainmenu%</div>
+    </div>
+  </div>
+</div>
+<div id="banner"></div>
+
+<script>
+  $(document).ready(function () {
+    $.hajaxOpenUrl(
+      "/app/index.php?Action=mobileloadmod&Type=mobilesch&Nbr=0",
+      "#headsearch"
+    );
+    $.hajaxOpenUrl(
+      "/app/index.php?Action=mobileloadmod&Type=mobile_sz_mstr&Nbr=5",
+      "#banner"
+    );
+    $(".hdsearch .sch-toggle").click(function () {
+      $(this).toggleClass("open");
+    });
+  });
+</script>
