@@ -4,8 +4,8 @@
       <a href="/?Lang=zh-tw" title="中國文化大學">
         <img src="/var/file/331/1331/img/2/mlogo.png" alt="中國文化大學" />
       </a>
-      <span class="CTitle">機械工程學系</span>
-      <span class="Etitle">Department of Mechanical Engineering</span>
+      <span class="CTitle">機械工程學系暨數位機電碩士班</span>
+      <span class="Etitle">Department of Mechanical Engineering and Master Program</span>
     </h1>
   </div>
   <div class="mycollapse">
@@ -19,10 +19,22 @@
     </button>
     <div class="navbar-collapse collapse nav-toggle" id="collapseExample2">
       <div class="topnav">%CustMenu_topnav%</div>
-      <div class="mainmenu">%CustMenu_mainmenu%</div>
+      <div class="mainmenu">
+        %CustMenu_mainmenu%
+        <div id="headsearch" class="navbar-form navbar-left"></div>
+      </div>
     </div>
   </div>
 </div>
 <div id="banner">
   <!-- <img src="/var/file/169/1169/img/484/mainhead_bann.jpg" alt="banner"> -->
 </div>
+
+<script>
+  $(document).ready(function () {
+    $.hajaxOpenUrl(
+      '/app/index.php?Action=mobileloadmod&Type=mobilesch&Nbr=0',
+      '#headsearch'
+    );
+  });
+</script>
