@@ -16063,7 +16063,6 @@ span.Etitle {
   background: #555;
   color: #fff;
   padding: 2em 0;
-  text-align: center;
 }
 .mn-footer {
   background: #555;
@@ -18104,4 +18103,18 @@ div#banner {
 #headsearch > div.module-search > div.msearch {
   margin-top: 0 !important;
   padding: 0 !important;
+}
+#headsearch header.mt {
+  display: none !important;
+}
+.text-white {
+  color: #fff !important;
+}
+a.text-white:active,
+a.text-white:focus,
+a.text-white:hover {
+  color: #ddd !important;
+}
+.bg-dark {
+  background-color: #343a40 !important;
 }

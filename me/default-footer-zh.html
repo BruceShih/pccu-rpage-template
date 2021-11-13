@@ -1,29 +1,64 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
 <script>
-  $(".floatAnimate").addClass("fadeTop");
-  $(".md_style4").addClass("fadeTop");
-  $(".v-td").addClass("fadeTop");
+  $('.floatAnimate').addClass('fadeTop');
+  $('.md_style4').addClass('fadeTop');
+  $('.v-td').addClass('fadeTop');
 
   var sr1 = ScrollReveal({
-    origin: "top", // 起始位置
-    distance: "80px", // 距離
+    origin: 'top', // 起始位置
+    distance: '80px', // 距離
     duration: 800, // 動畫時間
     delay: 0, // 動畫延遲時間
     rotate: { x: 0, y: 0, z: 0 }, // 旋轉角度
     opacity: 0, // 透明度
     scale: 0.9, // 縮放比例
-    easing: "cubic-bezier(0.6, 0.2, 0.1, 1)", // 動畫速度曲線
+    easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)', // 動畫速度曲線
     container: window.document.documentElement, // 外層
     mobile: true, // 支援行動裝置
     reset: true, // 每次都啟動動畫
-    useDelay: "always", // 延遲動畫次數
+    useDelay: 'always', // 延遲動畫次數
     viewFactor: 0.2, // 當該物件在可視範圍內，則顯示此物件(0.2表示可視範圍20%)
-    viewOffset: { top: 0, right: 0, bottom: 0, left: 0 }, // 當外層有設定間隔造成偏移，則請設定在此維持精準度
+    viewOffset: { top: 0, right: 0, bottom: 0, left: 0 } // 當外層有設定間隔造成偏移，則請設定在此維持精準度
   });
-  sr1.reveal(".fadeTop", {});
+  sr1.reveal('.fadeTop', {});
 </script>
-<p>
-  <b>中國文化大學機械系</b><br />學校地址：臺北市 111396
-  陽明山華岡路55號大義館704室，聯絡電話：(02)2861-0511 轉 33305, 33306<br />
-  電子信箱：<a href="mailto:crenme@dep.pccu.edu.tw">crenme@dep.pccu.edu.tw</a>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3 class="text-white"><b>相關連結</b></h3>
+    </div>
+    <div class="col-sm-4">
+      <h4 class="text-white"><b>機械工程學系暨數位機電碩士班</b></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="containrt-fluid">
+        <div class="row">
+          <div class="col-sm-3"><a class="text-white" href="https://www.pccu.edu.tw/">文大首頁</a></div>
+          <div class="col-sm-3"><a class="text-white" href="https://www.facebook.com/pccume/">系學會 FB</a></div>
+          <div class="col-sm-3"><a class="text-white" href="https://www.instagram.com/pccu._.me/">系學會 IG</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"><a class="text-white" href="https://www.pccu.edu.tw/intro_calendar.html">校行事曆</a></div>
+          <div class="col-sm-3"><a class="text-white" href="https://cross.pccu.edu.tw/files/90-1233-1.php?Lang=zh-tw">跨域專長</a></div>
+          <div class="col-sm-3"><a class="text-white" href="http://career.pccu.edu.tw/#">徵才訊息</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"><a class="text-white" href="https://servicelearning.pccu.edu.tw/bin/home.php">服務學習</a></div>
+          <div class="col-sm-3"><a class="text-white" href="https://pass.pccu.edu.tw/bin/home.php">全人學習</a></div>
+          <div class="col-sm-3"><a class="text-white" href="https://language.pccu.edu.tw/">英語檢定</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p>
+        學校地址：臺北市 111396
+        陽明山華岡路55號大義館704室，聯絡電話：(02)2861-0511 轉 33305, 33306
+        <br />
+        電子信箱：
+        <a class="text-white" href="mailto:crenme@dep.pccu.edu.tw">crenme@dep.pccu.edu.tw</a>
+      </p>
+    </div>
+  </div>
+</div>
