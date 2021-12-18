@@ -11082,7 +11082,7 @@ div[id$='_marquee'] .row.listBS {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.25s;
-  opacity: 0.75;
+  opacity: 1;
 }
 .owl-carousel .owl-nav .owl-prev {
   left: 0;
@@ -11235,12 +11235,6 @@ div[id$='_marquee'] .row.listBS {
   .owl-thumb img {
     width: 65px;
     height: 65px;
-  }
-  .owl-carousel .owl-nav .owl-prev {
-    left: 0;
-  }
-  .owl-carousel .owl-nav .owl-next {
-    right: 0;
   }
 }
 .navbar-toggle + .navbar-collapse .navbar-toggle {
@@ -16330,7 +16324,7 @@ p.more a {
 }
 .main .owl-carousel .owl-nav .owl-next:after,
 .main .owl-carousel .owl-nav .owl-prev:after {
-  border-color: #000;
+  border-color: white;
 }
 .owl-carousel .owl-controls {
   text-align: center;
@@ -17508,12 +17502,6 @@ div#banner {
 @media (min-width: 1366px) {
   #banner .module-adv .figBS figcaption {
     padding: 10px 0 6px 20%;
-  }
-  .main .owl-carousel .owl-nav .owl-prev {
-    left: -3em;
-  }
-  .main .owl-carousel .owl-nav .owl-next {
-    right: -3em;
   }
   .module-compound > .mouter > .mbox:first-child {
     padding-right: 1em;
